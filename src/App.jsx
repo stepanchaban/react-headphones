@@ -3,6 +3,33 @@ import Drawer from './components/Drawer';
 import Header from './components/Header';
 import './app.scss';
 
+const arr = [
+  {
+    id: 1,
+    title: 'Наушники студийные Beyerdynamic DT 770',
+    price: 21999,
+    imageUrl: '/img/headphones/1.jpg'
+  },
+  {
+    id: 2,
+    title: 'Наушники студийные AKG K92',
+    price: 8699,
+    imageUrl: '/img/headphones/2.jpg'
+  },
+  {
+    id: 3,
+    title: 'Наушники студийные AKG K271 MKII',
+    price: 28499,
+    imageUrl: '/img/headphones/3.jpg'
+  },
+  {
+    id: 4,
+    title: 'Наушники студийные Sennheiser HD 280 PRO',
+    price: 12799,
+    imageUrl: '/img/headphones/4.jpg'
+  }
+];
+
 function App() {
   return (
     <div className="wrapper clear">
@@ -18,8 +45,15 @@ function App() {
         </div>
 
         <div className="d-flex">
-          <Card />
-          <div className="card">
+          {arr.map((obj) => (
+            <Card
+              key={obj.id}
+              title={obj.title}
+              price={obj.price}
+              imageUrl={obj.imageUrl}
+            />
+          ))}
+          {/* <div className="card">
             <img
               width={133}
               height={120}
@@ -87,7 +121,7 @@ function App() {
                 ></img>
               </button>
             </div>
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>
