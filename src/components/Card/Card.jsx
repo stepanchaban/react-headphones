@@ -1,7 +1,9 @@
-const Card = ({ title, price, imageUrl }) => {
+import styles from './Card.module.scss';
+
+const Card = ({ title, price, imageUrl, priKlicke }) => {
   return (
-    <div className="card">
-      <div className="favorite">
+    <div className={styles.card}>
+      <div className={styles.favorite}>
         <img src="/img/heart-unliked.svg" alt="Unlike" />
       </div>
       <img width={133} height={120} src={imageUrl} alt="Headphones"></img>
@@ -11,7 +13,7 @@ const Card = ({ title, price, imageUrl }) => {
           <span>Цена: </span>
           <b>{price} руб.</b>
         </div>
-        <button className="button">
+        <button className="button" onClick={priKlicke}>
           <img width={11} height={11} src="/img/plus.svg" alt="Plus"></img>
         </button>
       </div>
