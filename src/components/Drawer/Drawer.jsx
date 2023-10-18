@@ -1,40 +1,50 @@
+import styles from './Drawer.module.scss';
+
 const Drawer = () => {
   return (
-    <div style={{ display: 'none' }} className="overlay">
-      <div className="drawer">
+    <div style={{ display: 'none' }} className={styles.overlay}>
+      <div className={styles.drawer}>
         <h2 className="d-flex justify-between mb-30 ">
           Корзина
           <img className="cu-p" src="img/btn-remove.svg" alt="Remove" />
         </h2>
-        <div className="items">
-          <div className="cartItem d-flex align-center mb-20">
+        <div className={styles.items}>
+          <div className={`${styles.cartItem} d-flex align-center mb-20`}>
             <div
               style={{ backgroundImage: 'url(/img/headphones/1.jpg)' }}
-              className="cartItemImg"
+              className={styles.cartItemImg}
             ></div>
 
             <div className="mr-20 flex">
               <p className="mb-5">Наушники студийные Beyerdynamic DT 770</p>
               <b>21 990 руб.</b>
             </div>
-            <img className="removeBtn" src="img/btn-remove.svg" alt="Remove" />
+            <img
+              className={styles.removeBtn}
+              src="img/btn-remove.svg"
+              alt="Remove"
+            />
           </div>
 
-          <div className="cartItem d-flex align-center">
+          <div className={`${styles.cartItem} d-flex align-center`}>
             <div
               style={{ backgroundImage: 'url(/img/headphones/1.jpg)' }}
-              className="cartItemImg"
+              className={styles.cartItemImg}
             ></div>
 
             <div className="mr-20 flex">
               <p className="mb-5">Наушники студийные Beyerdynamic DT 770</p>
               <b>21 990 руб.</b>
             </div>
-            <img className="removeBtn" src="img/btn-remove.svg" alt="Remove" />
+            <img
+              className={styles.removeBtn}
+              src="img/btn-remove.svg"
+              alt="Remove"
+            />
           </div>
         </div>
 
-        <div className="cartTotalBlock">
+        <div className={styles.cartTotalBlock}>
           <ul>
             <li>
               <span>Итого:</span>
@@ -47,7 +57,7 @@ const Drawer = () => {
               <b>1100 руб.</b>
             </li>
           </ul>
-          <button className="greenButton">
+          <button className={styles.greenButton}>
             Оформить заказ <img src="/img/arrow.svg" alt="Arrow" />
           </button>
         </div>

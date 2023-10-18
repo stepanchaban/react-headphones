@@ -1,6 +1,6 @@
-import Card from './components/Card';
-import Drawer from './components/Drawer';
-import Header from './components/Header';
+import Card from './components/Card/Card';
+import Drawer from './components/Drawer/Drawer';
+import Header from './Header';
 import './app.scss';
 
 const arr = [
@@ -51,10 +51,11 @@ function App() {
               title={obj.title}
               price={obj.price}
               imageUrl={obj.imageUrl}
+              priKlicke={() => console.log(obj)}
             />
           ))}
           {/* <div className="card">
-            <img
+            <imgconsole.log(first) 
               width={133}
               height={120}
               src="/img/headphones/2.jpg"
