@@ -44,7 +44,7 @@ function App() {
           </div>
         </div>
 
-        <div className="d-flex">
+        {/* <div className="d-flex">
           {arr.map((obj) => (
             <Card
               key={obj.id}
@@ -124,7 +124,7 @@ function App() {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
