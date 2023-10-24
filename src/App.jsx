@@ -51,11 +51,12 @@ function App() {
               title={obj.title}
               price={obj.price}
               imageUrl={obj.imageUrl}
-              priKlicke={() => console.log(obj)}
+              onPlus={() => console.log('Добавили в закладки')}
+              onFavorite={() => console.log('Нажали плюс')}
             />
           ))}
-          {/* <div className="card">
-            <imgconsole.log(first) 
+          <div className="card">
+            <img
               width={133}
               height={120}
               src="/img/headphones/2.jpg"
@@ -122,7 +123,7 @@ function App() {
                 ></img>
               </button>
             </div>
-          </div>*/}
+          </div>
         </div>
       </div>
     </div>
