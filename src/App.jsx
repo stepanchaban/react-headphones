@@ -8,25 +8,25 @@ const arr = [
     id: 1,
     title: 'Наушники студийные Beyerdynamic DT 770',
     price: 21999,
-    imageUrl: 'react-headphones/img/headphones/1.jpg'
+    imageUrl: '/react-headphones/img/headphones/1.jpg'
   },
   {
     id: 2,
     title: 'Наушники студийные AKG K92',
     price: 8699,
-    imageUrl: 'react-headphones/img/headphones/2.jpg'
+    imageUrl: '/react-headphones/img/headphones/2.jpg'
   },
   {
     id: 3,
     title: 'Наушники студийные AKG K271 MKII',
     price: 28499,
-    imageUrl: 'react-headphones/img/headphones/3.jpg'
+    imageUrl: '/react-headphones/img/headphones/3.jpg'
   },
   {
     id: 4,
     title: 'Наушники студийные Sennheiser HD 280 PRO',
     price: 12799,
-    imageUrl: 'react-headphones/img/headphones/4.jpg'
+    imageUrl: '/react-headphones/img/headphones/4.jpg'
   }
 ];
 
@@ -39,7 +39,7 @@ function App() {
         <div className="d-flex align-center justify-between mb-40">
           <h1>Все наушники</h1>
           <div className="search-block d-flex">
-            <img src="react-headphones/img/search.svg" alt="Search" />
+            <img src="/react-headphones/img/search.svg" alt="Search" />
             <input placeholder="Поиск ..." />
           </div>
         </div>
