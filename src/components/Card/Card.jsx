@@ -1,9 +1,9 @@
 import styles from './Card.module.scss';
 
-const Card = ({ title, price, imageUrl, priKlicke }) => {
+const Card = ({ title, price, imageUrl, onPlus, onFavorite }) => {
   return (
     <div className={styles.card}>
-      <div className={styles.favorite}>
+      <div className={styles.favorite} onClick={onFavorite}>
         <img src="/img/heart-unliked.svg" alt="Unlike" />
       </div>
       <img width={133} height={120} src={imageUrl} alt="Headphones"></img>
@@ -13,7 +13,7 @@ const Card = ({ title, price, imageUrl, priKlicke }) => {
           <span>Цена: </span>
           <b>{price} руб.</b>
         </div>
-        <button className="button" onClick={priKlicke}>
+        <button className="button" onClick={onPlus}>
           <img width={11} height={11} src="/img/plus.svg" alt="Plus"></img>
         </button>
       </div>
