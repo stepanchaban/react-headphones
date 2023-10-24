@@ -44,7 +44,7 @@ function App() {
           </div>
         </div>
 
-        {/* <div className="d-flex">
+        <div className="d-flex">
           {arr.map((obj) => (
             <Card
               key={obj.id}
@@ -55,7 +55,8 @@ function App() {
               onFavorite={() => console.log('Нажали плюс')}
             />
           ))}
-          <div className="card">
+
+          {/* <div className="card">
             <img
               width={133}
               height={120}
@@ -123,8 +124,8 @@ function App() {
                 ></img>
               </button>
             </div>
-          </div>
-        </div> */}
+          </div> */}
+        </div>
       </div>
     </div>
   );
